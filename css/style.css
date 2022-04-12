@@ -67,7 +67,7 @@ main .side_container .home{
     height: 140px;
 }
 
-/* PLaylist */
+/* Playlist */
 main .side_container .playlist span{
     display: inline-block;
     padding-left: 15px;
@@ -127,7 +127,7 @@ main .side_container a:hover{
     color: white;
 }
 
-#start_svg:hover{
+#start:hover #start_svg{
     filter: none;
 }
 
@@ -144,10 +144,17 @@ main .cta{
 }
 
 main .cta a{
+    color: white;
     border-radius: 25px;
     border: 1px solid white;
     padding: 13px 50px;
     margin-right: 25px;
+}
+
+main .cta a:hover{
+    padding: 16px 70px;
+    margin-right: 10px;
+    font-size: 16px;
 }
 
 /* Main container */
@@ -168,18 +175,18 @@ footer{
     background-color: #282828;
 }
 
-footer ul{
+/* footer ul{
     display: flex;
     align-items: center;
     list-style-type: none;
-    /* debug */
-    background: white;
-    width: 20%;
-    height: 40px;
-}
+} */
 
 footer li{
     margin: 0 10px;
     display: flex;
     align-items: center;
+}
+
+footer .plying{
+    height: 50px;
 }
