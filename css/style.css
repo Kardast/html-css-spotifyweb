@@ -13,12 +13,7 @@ body{
 
 a{
     text-decoration: none;
-    color: white;
     text-align: center;
-}
-
-.start{
-    color: orange;
 }
 
 /* Main */
@@ -47,6 +42,15 @@ main .side_container .side_icons{
     width: 30px;
     margin: 5px 10px 5px 15px;
     filter: invert(45%) sepia(0%) saturate(18%) hue-rotate(199deg) brightness(101%) contrast(83%);
+}
+
+#start{
+    color: white;
+    border-left: 1px solid yellow;
+}
+
+#start_svg{
+    filter: invert(30%) sepia(0%) saturate(18%) hue-rotate(199deg) brightness(101%) contrast(83%);
 }
 
 /* Logo */
@@ -115,6 +119,15 @@ main .side_container .user img{
 #account_img{
     background: #808080;
     border-radius: 50%;
+    filter: none;
+}
+
+/* Hover */
+main .side_container a:hover{
+    color: white;
+}
+
+#start_svg:hover{
     filter: none;
 }
 
