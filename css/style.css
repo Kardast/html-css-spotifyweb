@@ -7,6 +7,8 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: white;
 }
 
 a{
@@ -27,15 +29,54 @@ main{
 
 /* Side bar */
 main .side_container{
-    width: 12%;
-    overflow-y: scroll;
+    width: 230px;
     height: calc(100vh - 95px);
     background-color: #000000;
+    /* debug */
+    min-height: 500px;
+}
+
+main .side_container .logo{
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 55px 15px 15px;
+}
+
+main .side_container .side_icons{
+    height: 30px;
+    width: 30px;
+    margin: 5px 10px 5px 15px;
+    filter: invert(45%) sepia(0%) saturate(18%) hue-rotate(199deg) brightness(101%) contrast(83%);
+}
+
+main .side_container .home{
+    margin-bottom: 15px;
+}
+
+main .side_container .playlist ul{
+    overflow-y: scroll;
+}
+
+main .side_container .playlist li{
+    padding: 10px 0 10px 15px;
+}
+
+.side_container .playlist .fa-square-plus{
+    font-size: 50px;
+    margin-right: 10px;
+}
+
+main .side_container a{
+    color: #757575;
+    display: flex;
+    align-items: center;
 }
 
 /* Call to action */
 main .cta{
-    width: 88%;
+    width: calc(100% - 230px);
     height: 90px;
     position: fixed;
     z-index: 99999;
@@ -54,10 +95,12 @@ main .cta a{
 
 /* Main container */
 main .container{
-    width: 88%;
+    width: calc(100% - 230px);
     overflow-y: scroll;
     height: calc(100vh - 95px);
     background-color: #141922;
+    /* debug */
+    min-height: 300px;
 }
 
 /* Footer */
