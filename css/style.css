@@ -28,20 +28,22 @@ main{
 }
 
 /* Side bar */
+/* Common */
 main .side_container{
     width: 230px;
     height: calc(100vh - 95px);
     background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     /* debug */
-    min-height: 500px;
+    /* min-height: 500px; */
 }
 
-main .side_container .logo{
-    height: 90px;
+main .side_container a{
+    color: #757575;
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 15px 55px 15px 15px;
 }
 
 main .side_container .side_icons{
@@ -51,10 +53,22 @@ main .side_container .side_icons{
     filter: invert(45%) sepia(0%) saturate(18%) hue-rotate(199deg) brightness(101%) contrast(83%);
 }
 
-main .side_container .home{
-    margin-bottom: 15px;
+/* Logo */
+main .side_container .logo{
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 55px 15px 15px;
 }
 
+/* Home */
+main .side_container .home{
+    margin-bottom: 15px;
+    align-self: flex-start;
+}
+
+/* PLaylist */
 main .side_container .playlist ul{
     overflow-y: scroll;
 }
@@ -68,11 +82,10 @@ main .side_container .playlist li{
     margin-right: 10px;
 }
 
-main .side_container a{
-    color: #757575;
-    display: flex;
-    align-items: center;
-}
+/* User */
+/* .user{
+    align-self:flex-end;
+} */
 
 /* Call to action */
 main .cta{
