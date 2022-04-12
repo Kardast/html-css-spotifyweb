@@ -33,11 +33,7 @@ main .side_container{
     width: 230px;
     height: calc(100vh - 95px);
     background-color: #000000;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    /* debug */
-    /* min-height: 500px; */
+    overflow: hidden;
 }
 
 main .side_container a{
@@ -64,13 +60,20 @@ main .side_container .logo{
 
 /* Home */
 main .side_container .home{
-    margin-bottom: 15px;
-    align-self: flex-start;
+    height: 140px;
 }
 
 /* PLaylist */
+main .side_container .playlist span{
+    display: inline-block;
+    padding-left: 15px;
+    margin-bottom: 5px;
+}
+
 main .side_container .playlist ul{
     overflow-y: scroll;
+    height: calc(100vh - 440px);
+    min-height: 100px;
 }
 
 main .side_container .playlist li{
@@ -83,9 +86,37 @@ main .side_container .playlist li{
 }
 
 /* User */
-/* .user{
-    align-self:flex-end;
-} */
+main .side_container .user{
+    height: 100px;
+    padding: 0px 20px;
+}
+
+main .side_container .user a:first-child{
+    border-bottom: 1px solid #757575;
+}
+
+main .side_container .user a{
+    padding: 5px 0;
+}
+
+main .side_container .user img{
+    margin-left: 0;
+}
+
+#install{
+    height: 18px;
+    width: auto;
+}
+
+#account{
+    color: white;
+}
+
+#account_img{
+    background: #808080;
+    border-radius: 50%;
+    filter: none;
+}
 
 /* Call to action */
 main .cta{
@@ -112,8 +143,6 @@ main .container{
     overflow-y: scroll;
     height: calc(100vh - 95px);
     background-color: #141922;
-    /* debug */
-    min-height: 300px;
 }
 
 /* Footer */
