@@ -192,9 +192,33 @@ footer a{
     color: #757575;
 }
 
-footer .fa-regular{
+.left_comm .fa-regular, .middle_comm .fa-solid{
     font-size: 20px;
 }
+
+/* Bars */
+footer .bar{
+    height: 5px;
+    background: #5a5a5a;
+    border-radius: 25px;
+}
+
+footer .bar .counter{
+    height: 5px;
+    background: #c1c1c1;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+}
+
+footer .bar .counter .round{
+    background: white;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    display: none;
+}
+/* End common */
 
 /* Left commands */
 footer .playing{
@@ -211,6 +235,39 @@ footer .playing_specs a{
 }
 
 /* Middle commands */
+.middle_comm .up_player, .middle_comm .down_player{
+    display: flex;
+    justify-content: center;
+}
+
+footer .middle_comm .up_player{
+    padding-bottom: 10px;
+}
+
+footer .progress_bar{
+    width: 450px;
+}
+
+footer .bar .video_counter{
+    width: 90px;
+}
+
+footer .bar .video_counter .round{
+    margin-left: 78px;
+}
+
+footer .middle_comm .fa-circle-play{
+    font-size: 35px;
+    margin: 1px 5px;
+}
+
+.middle_comm .fa-regular, .middle_comm .fa-solid{
+    color: white;
+}
+
+footer .middle_comm li{
+    padding: 0 5px;
+}
 
 /* Right commands */
 footer .right_comm a{
@@ -218,27 +275,14 @@ footer .right_comm a{
 }
 
 footer .sound_bar{
-    width: 130px;
-    height: 5px;
-    background: #5a5a5a;
-    border-radius: 25px;
+    width: 120px;
 }
 
-footer .sound_bar .intensity{
+footer .bar .sound_counter{
     width: 30px;
-    height: 5px;
-    background: #c1c1c1;
-    border-radius: 25px;
-    display: flex;
-    align-items: center;
 }
 
-footer .sound_bar .intensity .round{
-    background: white;
-    border-radius: 50%;
-    width: 12px;
-    height: 12px;
-    display: none;
+footer .bar .sound_counter .round{
     margin-left: 18px;
 }
 
@@ -247,10 +291,15 @@ footer .left_comm a:hover{
     color: white;
 }
 
-footer .sound_bar:hover .intensity{
+footer .bar:hover .counter{
     background: yellow;
 }
 
-footer .sound_bar:hover .intensity .round{
+footer .bar:hover .counter .round{
     display: block;
+}
+
+footer .middle_comm .fa-circle-play:hover{
+    font-size: 37px;
+    margin: 0 4px;
 }
