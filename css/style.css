@@ -75,7 +75,7 @@ main .side_container .playlist span{
 }
 
 main .side_container .playlist ul{
-    overflow-y: scroll;
+    overflow-y: auto;
     height: calc(100vh - 440px);
     min-height: 100px;
 }
@@ -122,9 +122,13 @@ main .side_container .user img{
     filter: none;
 }
 
-/* Hover */
+/* Side hover */
 main .side_container a:hover{
     color: white;
+}
+
+main .side_container a:hover .side_icons{
+    filter: none;
 }
 
 #start:hover #start_svg{
@@ -160,9 +164,77 @@ main .cta a:hover{
 /* Main container */
 main .container{
     width: calc(100% - 230px);
-    overflow-y: scroll;
+    overflow-y: auto;
     height: calc(100vh - 95px);
     background-color: #141922;
+}
+
+/* Nav */
+main .container .nav{
+    margin-top: 110px;
+    margin-bottom: 30px;
+}
+
+main .container .nav ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+main .container .nav li{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+main .container .nav a{
+    color: #757575;
+}
+
+.nav #start_main{
+    border-bottom: 2px solid yellow;
+    width: 40px;
+    margin: auto;
+    margin-top: 3px;
+}
+
+/* Recently played */
+main .container .title{
+    width: 97%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+main .container .rec_played{
+    display: flex;
+    flex-wrap: wrap;
+    width: 97%;
+    margin: auto;
+}
+
+main .container .rec_played .content_box{
+    width: 16%;
+    min-width: 150px;
+    max-width: 230px;
+    text-align: center;
+    margin-right: 1%;
+}
+
+.rec_played .content_box img{
+    width: 100%;
+}
+
+.rec_played .content_box h3{
+    margin: 8px 0;
+    color: white;
+}
+
+.rec_played .content_box span{
+    color: #757575;
+}
+
+/* Main container hover */
+main .container .nav a:hover{
+    color: white;
 }
 
 /* Footer */
@@ -286,7 +358,7 @@ footer .bar .sound_counter .round{
     margin-left: 18px;
 }
 
-/* Hover */
+/* Footer hover */
 footer .left_comm a:hover{
     color: white;
 }
