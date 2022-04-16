@@ -134,6 +134,7 @@ main .side_container a:hover .side_icons{
 #start:hover #start_svg{
     filter: none;
 }
+/* End side bar */
 
 /* Call to action */
 main .cta{
@@ -160,6 +161,7 @@ main .cta a:hover{
     margin-right: 10px;
     font-size: 16px;
 }
+/* End call to action */
 
 /* Main container */
 main .container{
@@ -197,44 +199,75 @@ main .container .nav a{
     margin-top: 3px;
 }
 
-/* Recently played */
+/* Recently played/Created for you/Famous artists */
 main .container .title{
     width: 97%;
     margin: auto;
     margin-bottom: 30px;
 }
 
-main .container .rec_played{
+main .container .title h2{
+    margin-bottom: 10px;
+}
+
+main .container .content_row{
     display: flex;
     flex-wrap: wrap;
     width: 97%;
     margin: auto;
+    margin-bottom: 30px;
 }
 
-main .container .rec_played .content_box{
+main .container .content_row .content_box{
     width: 16%;
-    min-width: 150px;
+    min-width: 180px;
     max-width: 230px;
     text-align: center;
     margin-right: 1%;
 }
 
-.rec_played .content_box img{
+.content_row .content_box .photo_container{
+    position: relative;
+}
+
+.content_row .content_box img{
     width: 100%;
 }
 
-.rec_played .content_box h3{
+.content_row .content_box .circle_photo{
+    border-radius: 50%;
+}
+
+.content_row .content_box #photo_player{
+    color: white;
+    font-size: 55px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.content_row .content_box h3{
     margin: 8px 0;
     color: white;
 }
 
-.rec_played .content_box span{
+.container span{
     color: #757575;
 }
 
 /* Main container hover */
 main .container .nav a:hover{
     color: white;
+}
+
+main .content_row .photo_container:hover img{
+    filter: opacity(0.5);
+}
+
+main .content_row .photo_container:hover #photo_player{
+    display: block;
 }
 
 /* Footer */
