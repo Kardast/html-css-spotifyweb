@@ -204,6 +204,7 @@ main .container .title{
     width: 97%;
     margin: auto;
     margin-bottom: 30px;
+    padding-left: 10px;
 }
 
 main .container .title h2{
@@ -213,16 +214,17 @@ main .container .title h2{
 main .container .content_row{
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
     width: 97%;
     margin: auto;
     margin-bottom: 30px;
+    padding-left: 10px;
 }
 
 main .container .content_row .content_box{
-    width: 16%;
+    width: 17%;
     min-width: 180px;
     max-width: 230px;
-    text-align: center;
     margin-right: 1%;
 }
 
@@ -349,16 +351,24 @@ footer .middle_comm .up_player{
     padding-bottom: 10px;
 }
 
-footer .progress_bar{
-    width: 450px;
+footer .middle_comm{
+    width: 40%;
+}
+
+.down_player #container_bar{
+    width: 80%;
+}
+
+.down_player #a_bar{
+    width: 100%;
 }
 
 footer .bar .video_counter{
-    width: 90px;
+    width: 50px;
 }
 
 footer .bar .video_counter .round{
-    margin-left: 78px;
+    margin-left: 38px;
 }
 
 footer .middle_comm .fa-circle-play{
@@ -394,6 +404,7 @@ footer .bar .sound_counter .round{
 /* Footer hover */
 footer .left_comm a:hover{
     color: white;
+    text-decoration: underline;
 }
 
 footer .bar:hover .counter{
