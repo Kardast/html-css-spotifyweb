@@ -62,6 +62,11 @@ main .side_container .logo{
     padding: 15px 55px 15px 15px;
 }
 
+main .side_container .logo #small_logo{
+    display: none;
+    width: 30px;
+}
+
 /* Home */
 main .side_container .home{
     height: 140px;
@@ -174,7 +179,7 @@ main .container{
 /* Nav */
 main .container .nav{
     margin-top: 110px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 main .container .nav ul{
@@ -185,7 +190,7 @@ main .container .nav ul{
 
 main .container .nav li{
     display: inline-block;
-    padding: 0 10px;
+    padding: 10px 10px;
 }
 
 main .container .nav a{
@@ -222,10 +227,11 @@ main .container .content_row{
 }
 
 main .container .content_row .content_box{
-    width: 17%;
-    min-width: 180px;
-    max-width: 230px;
+    width: 15%;
+    min-width: 100px;
+    max-width: 250px;
     margin-right: 1%;
+    margin-bottom: 10px;
 }
 
 .content_row .content_box .photo_container{
@@ -259,6 +265,62 @@ main .container .content_row .content_box{
     color: #757575;
 }
 
+/* Main Media queries */
+@media screen and (max-width: 900px) {
+    main .container .content_row .content_box{
+        width: 24%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    main .container .content_row .content_box{
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main .side_container{
+        width: 60px;
+    }
+
+    main .container{
+        width: calc(100% - 60px);
+    }
+
+    main .cta{
+        width: calc(100% - 60px);
+    }
+
+    main .side_container .playlist{
+        display: none;
+    }
+
+    main .side_container .logo{
+        height: 50px;
+        padding: 0;
+    }
+
+    main .side_container span{
+        display: none;
+    }
+
+    #start{
+        border-left: none;
+    }
+
+    #big_logo{
+        display: none;
+    }
+
+    main .side_container .logo #small_logo{
+        display: block;
+    }
+
+    main .side_container .user a:first-child{
+        border-bottom: none;
+    }
+}
+
 /* Main container hover */
 main .container .nav a:hover{
     color: white;
@@ -290,7 +352,7 @@ footer ul{
 }
 
 footer li{
-    margin: 0 10px;
+    margin: 0 5px;
     display: flex;
     align-items: center;
 }
@@ -324,6 +386,8 @@ footer .bar .counter .round{
     width: 12px;
     height: 12px;
     display: none;
+    position: absolute;
+    right: -4px;
 }
 /* End common */
 
@@ -376,11 +440,6 @@ footer .bar .video_counter{
     position: relative;
 }
 
-footer .bar .video_counter .round{
-    position: absolute;
-    right: 0;
-}
-
 footer .middle_comm .fa-circle-play{
     font-size: 35px;
     margin: 1px 5px;
@@ -394,21 +453,23 @@ footer .middle_comm li{
     padding: 0 5px;
 }
 
+footer .down_player li{
+    margin: 0;
+}
+
 /* Right commands */
 footer .right_comm a{
     color: white;
 }
 
 footer .sound_bar{
-    width: 120px;
+    width: 100px;
+    margin-right: 10px
 }
 
 footer .bar .sound_counter{
     width: 30px;
-}
-
-footer .bar .sound_counter .round{
-    margin-left: 18px;
+    position: relative;
 }
 
 /* Footer hover */
