@@ -278,7 +278,7 @@ main .container .content_row .content_box{
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 630px) {
     main .side_container{
         width: 60px;
     }
@@ -318,6 +318,20 @@ main .container .content_row .content_box{
 
     main .side_container .user a:first-child{
         border-bottom: none;
+    }
+
+    main .side_container .user{
+        padding: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: calc(100vh - 285px);
+        min-height: 70px;
+    }
+
+    #install, #account_img{
+        margin: 0;
     }
 }
 
