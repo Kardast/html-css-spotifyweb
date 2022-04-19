@@ -337,8 +337,16 @@ footer .playing_specs{
     padding: 0 15px;
 }
 
+footer .left_icons{
+    flex-wrap: wrap;
+}
+
 footer .playing_specs a{
     font-size: 12px;
+}
+
+footer .left_icons a{
+    margin-right: 10px
 }
 
 /* Middle commands */
@@ -364,11 +372,13 @@ footer .middle_comm{
 }
 
 footer .bar .video_counter{
-    width: 50px;
+    width: 20%;
+    position: relative;
 }
 
 footer .bar .video_counter .round{
-    margin-left: 38px;
+    position: absolute;
+    right: 0;
 }
 
 footer .middle_comm .fa-circle-play{
